@@ -1,0 +1,65 @@
+{
+  "wifi": {
+    "ssid": "YOUR_WIFI_SSID",
+    "password": "YOUR_WIFI_PASSWORD"
+  },
+  "apiKeys": {
+    "openai": "YOUR_OPENAI_API_KEY",
+    "voicevox": "YOUR_VOICEVOX_API_KEY"
+  },
+  "imu": {
+    "threshold": 0.01,
+    "scale_factor": 320.0
+  },
+  "servo": {
+    "intervals_ms": [
+      5000,
+      10000,
+      7000,
+      3000,
+      8000,
+      2000
+    ],
+    "patterns": [
+      [
+        [-300, -100], [-900, -800], [-100, 100], [800, 900], [1700, 1900], [-700, -500]
+      ],
+      [
+        [0, 0], [-900, 100], [0, 0], [800, 800], [1800, 1900], [-400, -300]
+      ],
+      [
+        [-500, 500], [-900, -900], [0, 0], [800, 800], [1500, 1900], [-700, -500]
+      ]
+    ]
+  },
+  "display": {
+    "eye_patterns": [
+      "/normal.png",
+      "/up.png",
+      "/down.png",
+      "/left.png",
+      "/right.png", 
+      "/laugh.png",
+      "/smile.png",
+      "/surprised.png",
+      "/close.png"
+    ],
+    "eye_sequence": [
+      {"pattern": 0, "duration": 2000},
+      {"pattern": 8, "duration": 200},
+      {"pattern": 1, "duration": 2000},
+      {"pattern": 2, "duration": 2000},
+      {"pattern": 5, "duration": 2000},
+      {"pattern": 3, "duration": 2000},
+      {"pattern": 4, "duration": 2000},
+      {"pattern": 8, "duration": 200},
+      {"pattern": 7, "duration": 2000},
+      {"pattern": 8, "duration": 200},
+      {"pattern": 0, "duration": 2000},
+      {"pattern": 8, "duration": 200},
+      {"pattern": 1, "duration": 2000},
+      {"pattern": 2, "duration": 2000},
+      {"pattern": 6, "duration": 2000}
+    ]
+  }
+}
